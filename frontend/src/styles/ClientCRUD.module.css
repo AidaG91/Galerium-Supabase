@@ -1,0 +1,260 @@
+/* --- Main container --- */
+.wrapper {
+  padding: 2.5rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+/* --- Search and button --- */
+.searchInputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.6rem 2.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background-color: var(--color-bg);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  transition: all 0.2s ease;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  color: var(--color-muted);
+  pointer-events: none;
+}
+
+.clearSearchBtn {
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-muted);
+  padding: 0;
+  display: flex;
+  font-size: 1rem;
+}
+
+.clearSearchBtn:hover {
+  color: var(--color-text);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 20%, transparent);
+}
+
+/* --- Table --- */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+   min-width: 700px; 
+  white-space: nowrap; 
+}
+
+.table th,
+.table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+.table th {
+  background-color: var(--color-bg);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.table tbody tr:hover {
+  background-color: color-mix(in srgb, var(--color-accent) 5%, transparent);
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.phone {
+  white-space: nowrap;
+}
+
+/* --- Action icons --- */
+.actionsCell {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  color: var(--color-muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.iconButton:hover {
+  color: var(--color-accent-hover);
+  background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
+}
+
+.iconButton.delete:hover {
+  color: var(--color-danger-hover);
+  background-color: color-mix(in srgb, var(--color-danger) 15%, transparent);
+}
+
+/* --- Pagination --- */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.pageButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* --- Loading style --- */
+.tableWrapper {
+  position: relative;
+  overflow-x: auto;
+}
+
+.loadingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(2px);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+/* --- Spinner --- */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--color-border);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.noResults {
+  text-align: center;
+  padding: 3rem;
+  color: var(--color-muted);
+}
+
+/* --- Tags --- */
+.tagFilters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tagFilters span {
+  font-weight: 600;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.tagFilterButton {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tagFilterButton:hover {
+  background-color: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+}
+
+.tagFilterButton.active {
+  background-color: var(--color-accent-hover);
+  color: white;
+  border-color: var(--color-accent-hover);
+  font-weight: 600;
+}
+
+.clearFilterButton {
+  background: none;
+  border: none;
+  color: var(--color-danger);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+/* ---- Mobile-Phone Media Queries ---- */
