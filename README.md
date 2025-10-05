@@ -1,12 +1,16 @@
 # Galerium FullStack
 
 <p align="center">
-<img src="https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white" alt="Java 17">
-<img src="https://img.shields.io/badge/Spring_Boot-3.x-green?logo=spring&logoColor=white" alt="Spring Boot 3.x">
-<img src="https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white" alt="React 18">
-<img src="https://img.shields.io/badge/Vite-blue?logo=vite&logoColor=white" alt="Vite">
-<img src="https://img.shields.io/badge/MySQL-8-orange?logo=mysql&logoColor=white" alt="MySQL 8">
-<img src="https://img.shields.io/badge/Code_Style-Prettier-ff69b4?logo=prettier&logoColor=white" alt="Code Style: Prettier">
+  <img src="https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white" alt="React 18">
+  <img src="https://img.shields.io/badge/Supabase-green?logo=supabase&logoColor=white" alt="Supabase">
+  <img src="https://img.shields.io/badge/Vite-blue?logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/Code_Style-Prettier-ff69b4?logo=prettier&logoColor=white" alt="Code Style: Prettier">
+</p>
+
+<p align="center">
+  <strong><a href="https://galerium.netlify.app/" target="_blank">🚀 View Live Demo</a></strong>
+  &nbsp;|&nbsp;
+  <strong><a href="https://github.com/AidaG91/Galerium-Supabase.git" target="_blank">📄 View GitHub Repo</a></strong>
 </p>
 
 A full-stack CRUD application designed for photographers to manage clients, galleries, and sessions. This project was developed as the final project for Module 3 of the IronHack Web Development Bootcamp.
